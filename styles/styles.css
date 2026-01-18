@@ -23,7 +23,7 @@ body {
 .start {
     box-sizing: border-box;
     position: relative;
-    height: 100vh;              /* лучше чем height: 100vh */
+    height: 100vh;
     width: 100%;
     background-image: url("../assets/images/bg-start.jpg");
     background-size: cover;
