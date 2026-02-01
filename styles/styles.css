@@ -13,7 +13,6 @@
 }
 
 body {
-    background-color: var(--accent-olive);
     overflow-x: hidden;
 }
 
@@ -168,6 +167,8 @@ body {
 
 /* DETAILS */
 .details {
+    box-sizing: border-box;
+    padding: clamp(20px, 4vw, 80px);
     position: relative;
     background-image: url("../assets/images/details.jpg");
     background-size: cover;
@@ -196,7 +197,7 @@ body {
 
 .details p {
     font-family: "Cormorant Garamond", cursive, serif;
-    font-size: clamp(40px, 16vw, 50px);
+    font-size: clamp(45px, 16vw, 65px);
     text-align: center;
     color: var(--text-secondary);
 }
