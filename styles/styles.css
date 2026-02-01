@@ -77,7 +77,7 @@ body {
 .welcome {
     overflow: hidden;
     box-sizing: border-box;
-    padding: clamp(40px, 2vw, 80px) clamp(5px, 3vw, 80px);
+    padding: 120px 5px;
     background-color: var(--bg-main);
     display: flex;
     flex-direction: column;
@@ -113,11 +113,11 @@ body {
 .welcome__item {
     position: relative;
     box-sizing: border-box;
-    padding: clamp(10px, 2vw, 18px) clamp(8px, 3vw, 16px);
+    padding: clamp(20px, 2vw, 18px) clamp(8px, 3vw, 16px);
     font-family: "Montserrat", cursive, serif;
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 15px;
     align-items: center;
     border: 1px solid var(--accent-olive);
     flex: 1;
