@@ -7,6 +7,9 @@
     --text-main: #2E2A27;
     --text-secondary: #fcfcfc;
     --line-soft: #9A9A8A;
+    --font-family-main: 'Great', cursive;
+    --font-family-secondary: 'Cormorant', cursive, serif;
+    --font-family-third: 'Montserrat', cursive;
 }
 
 body {
@@ -20,6 +23,7 @@ body {
     flex-direction: column;
 }
 
+/* SECTION START */
 .start {
     box-sizing: border-box;
     position: relative;
@@ -67,3 +71,97 @@ body {
     font-size: clamp(28px, 6vw, 90px);
     margin-top: clamp(8px, 2vw, 16px);
 }
+
+/* SECTION WELCOME */
+
+.welcome {
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: clamp(40px, 2vw, 80px) clamp(5px, 3vw, 80px);
+    background-color: var(--bg-main);
+    display: flex;
+    flex-direction: column;
+    gap: clamp(16px, 6vw, 20px);
+    justify-content: center;
+    align-items: center;
+}
+
+.welcome__wrap {
+    position: relative;
+    margin-top: 20px;
+}
+
+.welcome h2 {
+    font-size: clamp(50px, 8vw, 80px);
+    font-family: "Great Vibes", cursive, serif;
+}
+
+.welcome__description {
+    font-family: "Cormorant Garamond", cursive, serif;
+    font-size: clamp(18px, 8vw, 40px);
+    text-align: center;
+    max-width: 980px;
+}
+
+.welcome ul {
+    border: 1px solid var(--accent-olive);
+    display: flex;
+    width: 100%;
+    max-width: 600px;
+}
+
+.welcome__item {
+    position: relative;
+    box-sizing: border-box;
+    padding: clamp(10px, 2vw, 18px) clamp(8px, 3vw, 16px);
+    font-family: "Montserrat", cursive, serif;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    border: 1px solid var(--accent-olive);
+    flex: 1;
+    min-width: clamp(120px, 2vw, 180px);
+}
+
+.welcome__item_day {
+    font-family: "Cormorant Garamond", cursive, serif;
+    font-size: clamp(14px, 4vw, 20px);
+}
+
+.welcome__item_month {
+    font-family: "Cormorant Garamond", cursive, serif;
+    font-size: clamp(14px, 4vw, 20px);
+}
+
+.welcome__item_date {
+    font-size: clamp(16px, 8vw, 70px);
+}
+
+.welcome__item--active .circle {
+    position: absolute;
+    inset: -30%;
+        /*top: 50%;*/
+        /*left: 50%;*/
+        /*transform: translate(-50%, -50%);*/
+    background-image: url("../assets/images/circle.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    pointer-events: none;
+    background-position: center;
+}
+
+/*.circle {*/
+/*    position: absolute;*/
+/*    top: 50%;*/
+/*    left: 50%;*/
+/*    transform: translate(-50%, -50%);*/
+
+/*    width: 110%;*/
+/*    aspect-ratio: 1 / 1;*/
+
+/*    background-image: url("../assets/images/circle.png");*/
+/*    background-repeat: no-repeat;*/
+/*    background-size: contain;*/
+/*    pointer-events: none;*/
+/*}*/
