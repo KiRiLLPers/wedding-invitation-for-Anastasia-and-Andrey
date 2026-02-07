@@ -156,7 +156,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50vh;
+    min-height: 100vh;
+    /*height: 50vh;*/
 }
 
 .see-you-soon h2 {
@@ -178,7 +179,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 50vh;
+    height: 100vh;
     gap: 350px;
     isolation: isolate;
 }
