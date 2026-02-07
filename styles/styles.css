@@ -80,9 +80,10 @@ body {
     background-color: var(--bg-main);
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 60px;
     justify-content: center;
     align-items: center;
+    min-height: 50vh;
 }
 
 .welcome__wrap {
@@ -147,28 +148,131 @@ body {
     background-position: center;
 }
 
-/* SEE YOU SOON */
-.see-you-soon {
-    background-image: url("../assets/images/see-you-soon.jpg");
-    background-size: cover;
-    background-position: center;
-    width: 100%;
+/* TIME */
+.time {
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 120px 5px;
+    background-color: var(--bg-main);
     display: flex;
+    flex-direction: column;
+    gap: 60px;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 50vh;
 }
 
-.see-you-soon h2 {
+.time ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+}
+
+.time ul li {
+    font-family: "Cormorant Garamond", cursive, serif;
+    font-size: clamp(80px, 16vw, 120px);
+    text-align: center;
+}
+
+/* PLACE */
+.place {
+    overflow: hidden;
+    box-sizing: border-box;
+    background-color: var(--bg-main);
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+    padding: 120px 0;
+}
+
+.place h2 {
     font-size: clamp(80px, 16vw, 120px);
     font-family: "Great Vibes", cursive, serif;
-    color: var(--text-secondary);
+}
+
+.place p {
+    font-family: "Cormorant Garamond", cursive, serif;
+    font-size: clamp(40px, 16vw, 50px);
+    text-align: center;
+    max-width: 980px;
+    padding-bottom: 80px;
+}
+
+.place__button {
+    width: 300px;
+    height: 300px;
+    background-color: var(--accent-olive);
+    display: flex;
+    padding: 20px;
+    border-radius: 50%;
+    z-index: 0;
+}
+
+.place__button button {
+    padding: 0;
+    background-color: var(--accent-olive);
+    border: none;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    font-family: "Cormorant Garamond", cursive, serif;
+    font-size: clamp(20px, 20vw, 50px);
+}
+
+.place img {
+    object-fit: cover;
+    background-position: center;
+    width: 100%;
+}
+
+/* DRESS-CODE */
+.dress-code {
+    overflow: hidden;
+    padding: 120px 5px;
+    box-sizing: border-box;
+    background-color: var(--bg-main);
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+}
+
+.dress-code h2 {
+    font-size: clamp(80px, 16vw, 120px);
+    font-family: "Great Vibes", cursive, serif;
+}
+
+.dress-code p {
+    font-family: "Cormorant Garamond", cursive, serif;
+    font-size: clamp(40px, 16vw, 50px);
+    text-align: center;
+    max-width: 980px;
+    padding-bottom: 80px;
+}
+
+.dress-code ul {
+    display: flex;
+    gap: 10px
+}
+
+.dress-code ul li {
+    display: inline-block;
+    width: clamp(20px, 16vw, 150px);
+    height: clamp(20px, 16vw, 150px);
+    background-color: var(--accent-olive);
+    box-shadow: 1px 1px 1px black;
 }
 
 /* DETAILS */
 .details {
     box-sizing: border-box;
-    padding: clamp(20px, 4vw, 80px);
+    padding: 160px 5px;
     position: relative;
     background-image: url("../assets/images/details.jpg");
     background-size: cover;
@@ -178,9 +282,15 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    gap: 350px;
+    gap: 20px;
     isolation: isolate;
+}
+
+.details h2 {
+    font-size: clamp(80px, 16vw, 120px);
+    font-family: "Great Vibes", cursive, serif;
+    color: var(--text-secondary);
+    margin-bottom: 20px;
 }
 
 .details::before {
@@ -199,5 +309,52 @@ body {
     font-family: "Cormorant Garamond", cursive, serif;
     font-size: clamp(45px, 16vw, 65px);
     text-align: center;
+    color: var(--text-secondary);
+}
+
+.details p:first-of-type {
+    margin-bottom: 100px;
+}
+
+/* CONTACTS */
+.contacts {
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 120px 5px;
+    background-color: var(--bg-main);
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+}
+
+.contacts h2 {
+    font-size: clamp(80px, 16vw, 120px);
+    font-family: "Great Vibes", cursive, serif;
+}
+
+.contacts p {
+    font-family: "Cormorant Garamond", cursive, serif;
+    font-size: clamp(45px, 16vw, 65px);
+    text-align: center;
+}
+
+/* SEE YOU SOON */
+.see-you-soon {
+    background-image: url("../assets/images/see-you-soon.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+}
+
+.see-you-soon h2 {
+    font-size: clamp(80px, 16vw, 120px);
+    font-family: "Great Vibes", cursive, serif;
     color: var(--text-secondary);
 }
