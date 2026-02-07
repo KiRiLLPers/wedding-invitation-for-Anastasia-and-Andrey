@@ -156,8 +156,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
-    /*height: 50vh;*/
+    height: 100vh;
 }
 
 .see-you-soon h2 {
