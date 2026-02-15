@@ -37,29 +37,31 @@
           </ul>
         </div>
       </section>
-      <section class="time">
-        <ul>
-          <li>10:00</li>
-          <li></li>
-          <li></li>
-          <li>12:00</li>
-          <li>14:00</li>
-          <li></li>
-          <li></li>
-          <li>16:00</li>
-          <li>18:00</li>
-          <li></li>
-          <li></li>
-          <li>20:00</li>
-        </ul>
-      </section>
       <section class="place">
         <h2>Место проведения</h2>
-        <p>Видная Усадьба, Старо-Нагорная ул., 20Б, Видное </p>
-<!--        <div class="place__button">-->
-<!--          <button type="button">Построить маршрут</button>-->
-<!--        </div>-->
+        <p>г. Новосибирск, Инская улица, 56 </p>
+        <!--        <div class="place__button">-->
+        <!--          <button type="button">Построить маршрут</button>-->
+        <!--        </div>-->
         <img src="./assets/images/place.jpg" alt="">
+      </section>
+      <section class="time">
+        <ul>
+          <li class="autoShow"><span>15:00</span><p>Роспись(центральный ЗАГС)</p></li>
+          <li></li>
+          <li></li>
+          <li class="autoShow"><span>15:10</span><p>Фотосессия на территории ЗАГСа</p></li>
+          <li class="autoShow"><span>16:00</span><p>Сбор гостей в банкетном зале</p></li>
+          <li></li>
+          <li></li>
+          <li class="autoShow"><span>16:30</span><p>Начало банкета</p></li>
+          <li class="autoShow"><span>23:00</span><p>Окончание вечера</p></li>
+        </ul>
+      </section>
+      <section class="details">
+        <h2>Details</h2>
+        <p>Свои теплые слова и пожелания приносите в сердцах, а подарки - в конверте </p>
+        <p>Вместо цветов мы будем счастливы получить бутылочку вина, которую вместе разделим однажды вечером</p>
       </section>
       <section class="dress-code">
         <h2>Дресс-код</h2>
@@ -72,19 +74,29 @@
           <li></li>
         </ul>
       </section>
-      <section class="details">
-        <h2>Details</h2>
-        <p>Свои теплые слова и пожелания приносите в сердцах, а подарки - в конверте </p>
-        <p>Вместо цветов мы будем счастливы получить бутылочку вина, которую вместе разделим однажды вечером</p>
-      </section>
-      <section class="contacts">
-        <h2>Контакты</h2>
-        <p>какая-то информация, номера телефонов, если нужно?</p>
-      </section>
+<!--      <section class="contacts">-->
+<!--        <h2>Контакты</h2>-->
+<!--        <p>какая-то информация, номера телефонов, если нужно?</p>-->
+<!--      </section>-->
       <section class="see-you-soon">
         <h2>До скорых встреч!</h2>
       </section>
     </div>
   </div>
+  <script>
+    const elements = document.querySelectorAll('.time .autoShow');
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+        }
+      });
+    }, {
+      threshold: 0.2
+    });
+
+    elements.forEach(el => observer.observe(el));
+  </script>
 </body>
 </html>

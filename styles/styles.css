@@ -152,7 +152,7 @@ body {
 .time {
     overflow: hidden;
     box-sizing: border-box;
-    padding: 120px 5px;
+    padding: 140px 20px;
     background-color: var(--bg-main);
     display: flex;
     flex-direction: column;
@@ -165,13 +165,21 @@ body {
 .time ul {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 80px;
+    gap: 120px 0;
 }
 
 .time ul li {
     font-family: "Cormorant Garamond", cursive, serif;
     font-size: clamp(80px, 16vw, 120px);
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.time ul li p {
+    font-family: "Cormorant Garamond", cursive, serif;
+    font-size: clamp(25px, 16vw, 40px);
 }
 
 /* PLACE */
@@ -185,7 +193,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 50vh;
-    padding: 120px 0;
+    padding: 120px 0 0 0;
 }
 
 .place h2 {
@@ -258,7 +266,7 @@ body {
 
 .dress-code ul {
     display: flex;
-    gap: 10px
+    gap: 25px;
 }
 
 .dress-code ul li {
@@ -266,13 +274,37 @@ body {
     width: clamp(20px, 16vw, 150px);
     height: clamp(20px, 16vw, 150px);
     background-color: var(--accent-olive);
-    box-shadow: 1px 1px 1px black;
+}
+
+.dress-code ul li:nth-child(1) {
+    box-shadow: 5px 5px 5px #543B2F;
+    background-color: #543B2F;
+}
+
+.dress-code ul li:nth-child(2) {
+    box-shadow: 5px 5px 5px #FFF2E1;
+    background-color: #FFF2E1;
+}
+
+.dress-code ul li:nth-child(3) {
+    box-shadow: 5px 5px 5px #DACCBD;
+    background-color: #DACCBD;
+}
+
+.dress-code ul li:nth-child(4) {
+    box-shadow: 5px 5px 5px #C19C9B;
+    background-color: #C19C9B;
+}
+
+.dress-code ul li:nth-child(5) {
+    box-shadow: 5px 5px 5px #99A286;
+    background-color: #99A286;
 }
 
 /* DETAILS */
 .details {
     box-sizing: border-box;
-    padding: 160px 5px;
+    padding: 200px 5px;
     position: relative;
     background-image: url("../assets/images/details.jpg");
     background-size: cover;
@@ -282,7 +314,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 40px;
     isolation: isolate;
 }
 
@@ -351,6 +383,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 70vh;
+    padding: 100px 0;
 }
 
 .see-you-soon h2 {
@@ -358,3 +391,19 @@ body {
     font-family: "Great Vibes", cursive, serif;
     color: var(--text-secondary);
 }
+
+.time .autoShow {
+    opacity: 0;
+    transform: translateY(60px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.time .autoShow.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.time .autoShow:nth-child(4) { transition-delay: 0.1s; }
+.time .autoShow:nth-child(5) { transition-delay: 0.2s; }
+.time .autoShow:nth-child(8) { transition-delay: 0.3s; }
+.time .autoShow:nth-child(9) { transition-delay: 0.4s; }
