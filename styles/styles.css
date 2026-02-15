@@ -392,13 +392,13 @@ body {
     color: var(--text-secondary);
 }
 
-.time .autoShow {
+.autoShow {
     opacity: 0;
     transform: translateY(60px);
     transition: opacity 0.8s ease, transform 0.8s ease;
 }
 
-.time .autoShow.show {
+.autoShow.show {
     opacity: 1;
     transform: translateY(0);
 }
