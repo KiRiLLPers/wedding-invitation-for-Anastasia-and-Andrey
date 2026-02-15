@@ -44,7 +44,7 @@ body {
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
 }
 
@@ -428,3 +428,9 @@ body {
 .time .autoShow:nth-child(5) { transition-delay: 0.4s; }
 .time .autoShow:nth-child(8) { transition-delay: 0.6s; }
 .time .autoShow:nth-child(9) { transition-delay: 0.8s; }
+
+@media screen and (max-width: 500px) {
+    .start__container {
+        padding-bottom: 60%;
+    }
+}
