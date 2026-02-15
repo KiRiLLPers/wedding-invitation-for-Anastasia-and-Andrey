@@ -395,7 +395,7 @@ body {
 .autoShow {
     opacity: 0;
     transform: translateY(60px);
-    transition: opacity 0.8s ease, transform 0.8s ease;
+    transition: opacity 1.5s ease, transform 1.5s ease;
 }
 
 .autoShow.show {
@@ -403,7 +403,7 @@ body {
     transform: translateY(0);
 }
 
-.time .autoShow:nth-child(4) { transition-delay: 0.1s; }
-.time .autoShow:nth-child(5) { transition-delay: 0.2s; }
-.time .autoShow:nth-child(8) { transition-delay: 0.3s; }
-.time .autoShow:nth-child(9) { transition-delay: 0.4s; }
+.time .autoShow:nth-child(4) { transition-delay: 0.3s; }
+.time .autoShow:nth-child(5) { transition-delay: 0.6s; }
+.time .autoShow:nth-child(8) { transition-delay: 0.9s; }
+.time .autoShow:nth-child(9) { transition-delay: 1.2s; }
