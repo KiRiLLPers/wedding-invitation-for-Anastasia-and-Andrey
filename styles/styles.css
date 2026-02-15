@@ -46,6 +46,7 @@ body {
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
+    padding-bottom: 70%;
 }
 
 .start::before {
@@ -429,8 +430,8 @@ body {
 .time .autoShow:nth-child(8) { transition-delay: 0.6s; }
 .time .autoShow:nth-child(9) { transition-delay: 0.8s; }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 700px) {
     .start__container {
-        padding-bottom: 60%;
+        padding-bottom: 0;
     }
 }
