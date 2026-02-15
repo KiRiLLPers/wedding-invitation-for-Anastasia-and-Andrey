@@ -429,7 +429,7 @@ body {
 .time .autoShow:nth-child(8) { transition-delay: 0.6s; }
 .time .autoShow:nth-child(9) { transition-delay: 0.8s; }
 
-@media screen and (max-width: 500px) {
+@media screen and (min-width: 600px) {
     .start__container {
         padding-bottom: 60%;
     }
